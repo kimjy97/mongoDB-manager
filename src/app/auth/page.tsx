@@ -1,18 +1,21 @@
 'use client'
 
+import { Suspense } from "react";
 import styled from "styled-components";
-import { Pretendard } from "@public/fonts";
 import LoginForm from "@components/LoginForm";
+import { Pretendard } from "@public/fonts";
 
-const Home = () => {
+const AuthPage = () => {
   return (
     <Container className={Pretendard.className}>
-      <LoginForm />
+      <Suspense fallback={<div>Loading...</div>}>
+        <LoginForm />
+      </Suspense>
     </Container>
   );
 }
 
-export default Home;
+export default AuthPage;
 
 const Container = styled.div`
   display: flex;

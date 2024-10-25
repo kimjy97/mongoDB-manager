@@ -1,0 +1,121 @@
+:root {
+  --bg-body: #191b1f;
+  --bg-collections: #101014;
+  --bg-collections-border: #252529;
+  --bg-documents: #101013;
+  --bg-documents-border: rgb(42, 42, 48);
+  --bg-documents-edit-border: #48500d;
+  --bg-modal: #101012;
+  --bg-modal-border: #33343c;
+
+  --color-default: #fff;
+  --color-reverse: #000;
+  --color-mute-1: #ced0dc;
+  --color-mute-2: #babbca;
+  --color-mute-3: #8b8c98;
+  --color-mute-4: #777886;
+  --color-mute-5: #63636e;
+  --color-mute-6: #414148;
+  --color-mute-7: #222224;
+  --color-mute-8: #0a0a0b;
+  --color-blue-1: #c1c1f2;
+  --color-blue-2: #9595f7;
+  --color-blue-3: #5e5ed1;
+  --color-blue-4: #4a4aaa;
+  --color-blue-5: #28283d;
+  --color-blue-6: #171724;
+  --color-blue-7: #0b0b1e;
+  --color-blue-8: #070713;
+  --color-yellow-1: #fefac8;
+  --color-yellow-2: #fff896;
+  --color-yellow-3: #fff34a;
+  --color-yellow-4: #ccc123;
+  --color-yellow-5: #888019;
+  --color-yellow-6: #544f0d;
+  --color-yellow-7: #343107;
+  --color-yellow-8: #191701;
+  --color-red-1: #f37c7c;
+  --color-red-2: #dd1d1d;
+  --color-red-3: #ad1d1d;
+  --color-red-4: #732121;
+  --color-red-5: #5b1818;
+  --color-red-6: #3e0e0e;
+  --color-red-7: #200606;
+
+  --bg-sb: #f8f7ff81;
+  --bg-sb-mute: #f8f7ff81;
+  --bg-sb-hover: rgba(242, 252, 255, 0.726);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  position: relative;
+  max-width: 100vw;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 18px; /* 스크롤바의 너비 */
+  }
+  &::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 8px;
+    border: 6px solid transparent;
+    box-shadow: inset 8px 8px 0 var(--bg-sb);
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 6px 6px 0 var(--bg-sb-hover);
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: var(--bg-body);
+  }
+}
+
+body {
+  color: var(--color-default);
+  background: var(--bg-body);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input {
+  min-width: 1em;
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  font-family: inherit;
+
+  &::placeholder {
+    color: var(--color-mute-6);
+  }
+}
+textarea {
+  min-width: 1em;
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  font-family: inherit;
+
+  &::placeholder {
+    color: var(--color-mute-6);
+  }
+}
