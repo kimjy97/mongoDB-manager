@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📄 MongoDB 매니저
 
-## Getting Started
+MongoDB 데이터베이스를 쉽게 관리하고 모니터링할 수 있는 웹 기반 관리 도구입니다. MongoDB의 기본적인 CRUD 작업부터 고급 쿼리 작성까지 직관적인 UI로 제공합니다.
 
-First, run the development server:
+## ✨ 주요 기능
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📊 데이터베이스 연결 및 관리
+- 🔍 컬렉션 및 문서 조회
+- ✏️ 문서 추가, 수정, 삭제 기능
+- 💻 고급 쿼리 작성 기능
+- ♾️ 무한 스크롤을 통한 대량 문서 로딩
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 기술 스택
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js, TypeScript, Styled Components
+- **상태 관리**: Recoil
+- **데이터베이스**: MongoDB Native Driver
+- **배포**: Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 💡 핵심 기능 설명
 
-## Learn More
+### 데이터베이스 관리 시스템
 
-To learn more about Next.js, take a look at the following resources:
+- MongoDB 네이티브 드라이버를 활용한 직접적인 데이터베이스 제어
+- 다중 데이터베이스 연결 및 관리 지원
+- 데이터베이스 구조 시각화
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 문서 관리 기능
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- 컬렉션 내 문서 조회 및 필터링
+- JSON 형식의 직관적인 문서 편집 인터페이스
+- 대량의 문서도 원활하게 처리할 수 있는 무한 스크롤
 
-## Deploy on Vercel
+### 쿼리 작성 시스템
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 고급 MongoDB 쿼리 작성 및 실행
+- 쿼리 결과 실시간 프리뷰
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 성능 최적화
+
+- **효율적인 데이터 로딩**: 무한 스크롤을 통한 점진적인 문서 로딩
+- **캐시 최적화**: 브라우저 캐시를 활용한 빠른 데이터 접근
+- **네이티브 드라이버**: MongoDB 네이티브 드라이버를 통한 직접 제어로 성능 향상
