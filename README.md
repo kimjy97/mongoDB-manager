@@ -2,6 +2,9 @@
 
 MongoDB 데이터베이스를 쉽게 관리하고 모니터링할 수 있는 웹 기반 관리 도구입니다. MongoDB의 기본적인 CRUD 작업부터 고급 쿼리 작성까지 직관적인 UI로 제공합니다.
 
+<img width="1920" alt="db_2" src="https://github.com/user-attachments/assets/819ba18e-1aff-4ab8-9d10-72449a344485">
+
+
 ## ✨ 주요 기능
 
 - 📊 데이터베이스 연결 및 관리
